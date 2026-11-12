@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Ameshika Mohankumar | UI/UX Designer &amp; Front-End Developer</title>
+    <meta name="title" content="Ameshika Mohankumar | UI/UX Designer &amp; Front-End Developer">
+    <meta name="description" content="Portfolio of Ameshika Mohankumar, UI/UX Designer and Front-End Developer specializing in intuitive digital experiences, design systems, and responsive web applications.">
+    <meta name="keywords" content="UI/UX Designer, Front-End Developer, Figma, JavaScript, Design Systems, Case Studies, Portfolio">
+    <meta name="author" content="Ameshika Mohankumar">
+    <meta name="theme-color" content="#07070a">
+    <link rel="canonical" href="https://ameshikamohankumar.com/">
+
+    <!-- Open Graph / Facebook / LinkedIn Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ameshikamohankumar.com/">
+    <meta property="og:title" content="Ameshika Mohankumar | UI/UX Designer &amp; Front-End Developer">
+    <meta property="og:description" content="Crafting clean, intuitive interfaces and turning them into fast, responsive digital products. View selected case studies and development pipelines.">
+    <meta property="og:image" content="Profile.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ameshikamohankumar.com/">
+    <meta name="twitter:title" content="Ameshika Mohankumar | UI/UX Designer &amp; Front-End Developer">
+    <meta name="twitter:description" content="Explore UI/UX case studies, interactive prototypes, and front-end code by Ameshika Mohankumar.">
+    <meta name="twitter:image" content="Profile.jpg">
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS Detection Script to avoid flash of invisible content -->
+    <script>
+        document.documentElement.classList.add('js');
+        // Restore saved theme early to prevent flash
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Accessible Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Animated Dynamic Starfield Canvas Background -->
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <!-- Custom Cursor Rings (Desktop only) -->
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar animate-nav" aria-label="Main Navigation">
+            <a href="#home" class="nav-profile" aria-label="Ameshika Mohankumar Home">
+                <span class="profile-status-dot" aria-hidden="true"></span>
+                <span class="profile-name">Ameshika Mohankumar</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#work" class="nav-item">Works</a>
+                <a href="#testimonials" class="nav-item">Feedback</a>
+                <a href="#insights" class="nav-item">Insights</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button type="button" id="themeToggle" class="theme-toggle-btn magnet-target" aria-label="Toggle dark and light theme" title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <div class="hero-avatar-container fade-in-avatar">
+                    <div class="avatar-ring">
+                        <img src="Profile.jpg" alt="Ameshika Mohankumar portrait" class="profile-large-img" width="160" height="160" loading="eager">
+                    </div>
+                    <span class="available-badge">
+                        <span class="pulse-point"></span> Open to Opportunities
+                    </span>
+                </div>
+
+                <div class="hero-eyebrow fade-in-sub">UI/UX Designer &bull; Front-End Developer</div>
+                
+                <h1 id="hero-heading" class="reveal-text">
+                    Design &amp; Build <br>
+                    <span class="gradient-text">Digital Experiences</span>
+                </h1>
+
+                <p class="fade-in-sub hero-description">
+                    Bridging user-centered design and clean front-end engineering. Transforming complex problems into intuitive, responsive, and accessible digital products.
+                </p>
+
+                <!-- Action Button Group -->
+                <div class="hero-cta-group fade-in-sub">
+                    <a href="#work" class="cta-button primary-cta magnet-target">
+                        <span>Explore Case Studies</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                    </a>
+                    
+                    <a href="resume.pdf" download="Ameshika Mohankumar UI-UX Designer & Front-End Developer.pdf" class="cta-button secondary-cta magnet-target" aria-label="Download Resume PDF">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+
+                <!-- Social Channels -->
+                <div class="social-links fade-in-sub" aria-label="Social Profiles">
+                    <a href="mailto:ameshikamohankumar073@gmail.com" class="social-icon magnet-target" aria-label="Send Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/ameshika-mohankumar" target="_blank" rel="noopener noreferrer" class="social-icon magnet-target" aria-label="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/ameshikamohankumar" target="_blank" rel="noopener noreferrer" class="social-icon magnet-target" aria-label="GitHub Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="https://dribbble.com/AmeshikaMohankumar555" target="_blank" rel="noopener noreferrer" class="social-icon magnet-target" aria-label="Dribbble Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+                    </a>
+                    <a href="https://www.behance.net/ameshikmohanku" target="_blank" rel="noopener noreferrer" class="social-icon magnet-target" aria-label="Behance Profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.61.165-1.252.254-1.91.254H0V4.51h6.938v-.007zM6.545 9.64c.58 0 1.06-.14 1.43-.42.38-.28.56-.73.56-1.34 0-.34-.06-.63-.19-.85-.12-.22-.3-.39-.51-.51-.22-.13-.46-.21-.74-.26-.27-.05-.56-.07-.86-.07H3.31v3.45h3.235zm.19 5.86c.33 0 .64-.03.94-.1.29-.07.55-.18.77-.33.22-.15.4-.35.53-.6.13-.26.2-.58.2-.97 0-.77-.22-1.32-.66-1.65-.44-.33-1.02-.5-1.75-.5H3.31v4.15h3.425zm8.4-.01c.4.39.97.58 1.72.58.54 0 1.01-.14 1.4-.41.39-.27.63-.56.72-.87h2.36c-.38 1.17-.96 2.01-1.75 2.51-.78.5-1.73.76-2.84.76-.77 0-1.46-.12-2.08-.37-.62-.25-1.14-.6-1.57-1.06-.43-.46-.76-1-.99-1.65-.23-.64-.35-1.34-.35-2.1 0-.73.12-1.41.36-2.04.24-.63.58-1.17 1.02-1.63.44-.46.96-.82 1.57-1.07.6-.26 1.27-.39 2-.39.82 0 1.53.16 2.14.48.6.32 1.1.75 1.49 1.29.39.54.67 1.15.84 1.84.17.68.23 1.4.18 2.14h-7.04c0 .75.26 1.45.65 1.84zm3.03-5.17c-.31-.34-.84-.53-1.48-.53-.42 0-.77.07-1.05.21-.28.14-.5.31-.67.52-.17.21-.29.43-.35.67-.07.23-.1.44-.12.62h4.35c-.1-.66-.37-1.14-.68-1.49zM15.4 5.8h5.5v1.34h-5.5V5.8z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT & SKILLS SECTION -->
+        <section id="about" class="about-section scroll-reveal" aria-labelledby="about-heading">
+            <div class="section-container">
+                <span class="section-badge">Background &amp; Philosophy</span>
+                <h2 id="about-heading">About Me</h2>
+
+                <p class="about-lead">
+                    I believe great digital experiences occur at the crossroads of rigorous user empathy and clean, high-performance code.
+                </p>
+
+                <p>
+                    I&rsquo;m an IT graduate and UI/UX designer who turns product ideas into simple, intuitive journeys. I plan user flows, design and prototype in Figma, then build responsive pages with HTML, CSS and JavaScript. At Gamage Recruiters I designed web and mobile interfaces for real client briefs, and I use AI tools like Claude and ChatGPT to prototype and test ideas faster while keeping accessibility in mind.
+                </p>
+
+                <!-- 3 Pillars Grid -->
+                <div class="about-cards">
+                    <div class="about-card">
+                        <span class="about-card-icon" aria-hidden="true">🎨</span>
+                        <h3>Design Systems</h3>
+                        <p>User flows, wireframes, accessible design systems and interactive prototypes.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-card-icon" aria-hidden="true">💻</span>
+                        <h3>Front-End Engineering</h3>
+                        <p>Semantic HTML5, CSS Grid/Flexbox, smooth micro-interactions and responsive vanilla JavaScript.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-card-icon" aria-hidden="true">🤖</span>
+                        <h3>AI Prototyping</h3>
+                        <p>Using AI tools to prototype, test and iterate faster without losing quality.</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <h3 class="about-subtitle">Experience</h3>
+                <p class="ai-intro">Hands-on design work delivered for real client briefs.</p>
+
+                <div class="ai-tools-grid qualifications-grid">
+                    <div class="ai-tool qualification-card">
+                        <span class="ai-tool-icon" aria-hidden="true">💼</span>
+                        <div>
+                            <span class="qualification-tag">Internship &bull; Completed</span>
+                            <h4>UI/UX Designer Intern</h4>
+                            <p class="qualification-meta">Gamage Recruiters &bull; Colombo, Sri Lanka &bull; February 2025 &ndash; August 2025</p>
+                            <ul class="experience-list">
+                                <li>Designed user-friendly interfaces for web and mobile applications based on real client briefs, building a portfolio of delivered UI/UX work.</li>
+                                <li>Created wireframes, interactive prototypes and high-fidelity mockups in Figma, keeping visual consistency and brand standards across digital platforms.</li>
+                                <li>Applied user-centred design and usability best practices throughout each project, from research and ideation to design handoff.</li>
+                                <li>Iterated on designs using user feedback and usability reviews to improve interface quality and accessibility.</li>
+                                <li>Collaborated with developers and cross-functional team members to ensure designs were implemented accurately.</li>
+                                <li>Maintained design system consistency, including UI components, branding guidelines and reusable Figma assets, across concurrent projects.</li>
+                                <li>Managed multiple design tasks independently within a structured agency workflow.</li>
+                            </ul>
+                            <div class="module-label" id="experienceSkillsLabel">Key skills applied</div>
+                            <ul class="module-list" aria-labelledby="experienceSkillsLabel">
+                                <li class="module-tag">Figma</li>
+                                <li class="module-tag">Wireframing</li>
+                                <li class="module-tag">Interactive Prototyping</li>
+                                <li class="module-tag">High-Fidelity Mockups</li>
+                                <li class="module-tag">User-Centred Design</li>
+                                <li class="module-tag">Design Systems</li>
+                                <li class="module-tag">Usability &amp; Accessibility</li>
+                                <li class="module-tag">Developer Handoff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qualifications -->
+                <h3 class="about-subtitle">Qualifications</h3>
+                <p class="ai-intro">Formal training that supports my design and front-end work with practical IT knowledge.</p>
+
+                <div class="ai-tools-grid qualifications-grid">
+                    <div class="ai-tool qualification-card">
+                        <span class="ai-tool-icon" aria-hidden="true">🎓</span>
+                        <div>
+                            <span class="qualification-tag">Degree &bull; Completed</span>
+                            <h4>Bachelor of Information Technology</h4>
+                            <p class="qualification-meta">Saegis Campus &bull; 2022 &ndash; 2025</p>
+                            <p>Completed degree covering software development, networking, databases, web and mobile technologies, security and IT project management.</p>
+                            <div class="qualification-note">
+                                Approved by the Ministry of Higher Education as a degree-awarding institution under Section 25A of the Universities Act No. 16 of 1978, University Grants Commission (UGC), Sri Lanka.
+                            </div>
+                            <div class="module-label" id="modulesLabel">Modules covered</div>
+                            <ul class="module-list" aria-labelledby="modulesLabel">
+                                <li class="module-tag">Human–Computer Interaction (HCI)</li>
+                                <li class="module-tag">Mathematics of Computing</li>
+                                <li class="module-tag">Descriptive Statistics and Probability</li>
+                                <li class="module-tag">Office Automation</li>
+                                <li class="module-tag">Communication Skills</li>
+                                <li class="module-tag">Database Management</li>
+                                <li class="module-tag">Business Management</li>
+                                <li class="module-tag">System Development</li>
+                                <li class="module-tag">Web Technologies</li>
+                                <li class="module-tag">Multimedia Technologies</li>
+                                <li class="module-tag">Soft Skills &amp; Entrepreneurship Skills</li>
+                                <li class="module-tag">Data Communication &amp; Computer Networks</li>
+                                <li class="module-tag">Object-Oriented Programming</li>
+                                <li class="module-tag">Information Assurance and Security</li>
+                                <li class="module-tag">Social and Professional Issues</li>
+                                <li class="module-tag">Software Engineering</li>
+                                <li class="module-tag">Cloud Computing</li>
+                                <li class="module-tag">System and Network Administration</li>
+                                <li class="module-tag">Technopreneurship</li>
+                                <li class="module-tag">Object-Oriented System Development</li>
+                                <li class="module-tag">Agile System Development</li>
+                                <li class="module-tag">Research Methodology</li>
+                                <li class="module-tag">E-Business Technology</li>
+                                <li class="module-tag">IT Project Management</li>
+                                <li class="module-tag">Service-Oriented Computing</li>
+                                <li class="module-tag">Mobile Application</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Design Tools -->
+                <h3 class="about-subtitle">Design Tools</h3>
+                <p class="ai-intro">Industry-standard tools for early user journeys, collaborative wireframes, and developer handoffs.</p>
+
+                <div class="ai-tools-grid">
+                    <div class="ai-tool">
+                        <span class="tool-badge figma-badge" aria-hidden="true">Fg</span>
+                        <div>
+                            <h4>Figma</h4>
+                            <p>Component libraries, auto-layout, interactive prototypes &amp; tokens</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="tool-badge figjam-badge" aria-hidden="true">Fj</span>
+                        <div>
+                            <h4>FigJam</h4>
+                            <p>Information architecture, user personas &amp; flow journey mapping</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="tool-badge xd-badge" aria-hidden="true">Xd</span>
+                        <div>
+                            <h4>Adobe XD</h4>
+                            <p>Rapid click-through mockups and transition state testing</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="tool-badge canva-badge" aria-hidden="true">Cv</span>
+                        <div>
+                            <h4>Canva</h4>
+                            <p>Social collateral, slide presentations &amp; pitch assets</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="tool-badge miro-badge" aria-hidden="true">Mi</span>
+                        <div>
+                            <h4>Miro</h4>
+                            <p>Cross-functional discovery workshops &amp; card sorting exercises</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Tools Grid -->
+                <h3 class="about-subtitle">AI &amp; Agent-Driven Workflows</h3>
+                <p class="ai-intro">Intelligent assistants enhance every step from user research synthesis to writing testable front-end code.</p>
+
+                <div class="ai-tools-grid">
+                    <div class="ai-tool">
+                        <span class="ai-tool-icon" aria-hidden="true">🛸</span>
+                        <div>
+                            <h4>Google Antigravity</h4>
+                            <p>Agentic IDE for end-to-end task decomposition, coding &amp; verification</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="ai-tool-icon" aria-hidden="true">🎨</span>
+                        <div>
+                            <h4>Midjourney</h4>
+                            <p>Moodboarding, creative visual exploration &amp; high-impact art direction</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="ai-tool-icon" aria-hidden="true">✨</span>
+                        <div>
+                            <h4>Galileo AI</h4>
+                            <p>Instant natural-language exploration for mobile &amp; web layouts</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="ai-tool-icon" aria-hidden="true">🧪</span>
+                        <div>
+                            <h4>Maze AI</h4>
+                            <p>Automated usability metrics, heatmaps, and qualitative telemetry</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="ai-tool-icon" aria-hidden="true">🤖</span>
+                        <div>
+                            <h4>Claude &amp; ChatGPT</h4>
+                            <p>Logic validation, algorithmic optimization, and copy stress-testing</p>
+                        </div>
+                    </div>
+                    <div class="ai-tool">
+                        <span class="ai-tool-icon" aria-hidden="true">📝</span>
+                        <div>
+                            <h4>Notion AI</h4>
+                            <p>Synthesizing client interview notes and product requirements</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Tags -->
+                <div class="skills-grid" aria-label="Technical and Design Skills">
+                    <span class="skill-tag">Design Systems</span>
+                    <span class="skill-tag">Responsive UI/UX</span>
+                    <span class="skill-tag">Information Architecture</span>
+                    <span class="skill-tag">HTML5 &amp; Semantic Web</span>
+                    <span class="skill-tag">Modern CSS3 &amp; Animations</span>
+                    <span class="skill-tag">Vanilla JavaScript (ES6+)</span>
+                    <span class="skill-tag">Agentic AI Workflows</span>
+					<span class="skill-tag">Three.js</span>
+					<span class="skill-tag">React.js</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROJECT SHOWCASE (CASE STUDIES WITH PROBLEM, PROCESS, RESULT) -->
+        <section id="work" class="work-section scroll-reveal" aria-labelledby="work-heading">
+            <div class="section-container">
+                <span class="section-badge">Case Studies &amp; Code</span>
+                <h2 id="work-heading">Selected Work</h2>
+
+                <!-- Current Sprint Banner -->
+                <div class="pipeline-banner">
+                    <div class="pipeline-badge">🚀 Current Work</div>
+                    <h3>Current Development Pipeline</h3>
+                    <p>
+                        Presently working on a <strong>banking UX redesign</strong> and <strong>two small front-end modules</strong> in vanilla JavaScript.
+                    </p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls" role="tablist" aria-label="Filter portfolio projects">
+                    <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+                    <button type="button" class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX Case Studies</button>
+                    <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Front-End Code</button>
+                    <button type="button" class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI Prototypes</button>
+                </div>
+
+                <!-- Comprehensive Case Studies -->
+                <div class="project-list" id="projectGrid">
+
+                    <!-- CASE STUDY 1: Local E-Grocery App -->
+                    <article class="project-card case-study-card" data-category="uiux">
+                        <div class="card-header">
+                            <div class="project-info">
+                                <span class="project-icon" aria-hidden="true">🛒</span>
+                                <div>
+                                    <span class="project-tag">UI/UX Case Study</span>
+                                    <h3>Local E-Grocery App</h3>
+                                </div>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://www.figma.com/design/wMqDQ3c0RF76ZY74fvQDs3/Local-E-Grocery-app?node-id=0-1" target="_blank" rel="noopener noreferrer" class="project-link figma-link" aria-label="View Local E-Grocery App on Figma">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg>
+                                    <span>Figma</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Case Study Breakdown: Problem, Process, Result -->
+                        <div class="case-study-grid">
+                            <div class="case-study-col">
+                                <span class="case-label label-problem">Problem</span>
+                                <p>Design brief: a mobile grocery app for local shoppers, covering item browsing, delivery-slot selection, cart and checkout.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-process">Process</span>
+                                <p>Mobile screens and flows designed in Figma: item browsing, quantity controls, delivery slots and a single-page checkout.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-result">Result</span>
+                                <p>A mobile UI/UX design for a local e-grocery app, with the full Figma file linked for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="tech-pills">
+                                <span>Figma</span>
+                                <span>Mobile UX</span>
+                                <span>E-Commerce</span>
+                                <span>UI Design</span>
+                            </div>
+                            <button type="button" class="view-details-btn magnet-target" data-modal="modal-grocery">
+                                <span>Read Full Case Study</span><span class="details-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CASE STUDY 2: AI Adaptive Telemetry Dashboards -->
+                    <article class="project-card case-study-card" data-category="ai">
+                        <div class="card-header">
+                            <div class="project-info">
+                                <span class="project-icon" aria-hidden="true">📊</span>
+                                <div>
+                                    <span class="project-tag">AI &amp; Data Visualization</span>
+                                    <h3>AI Adaptive Dashboards</h3>
+                                </div>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://www.figma.com/design/YZRspzy4cGhm1yGOrJLTtG/AI---adaptive-dashboards---Luma-" target="_blank" rel="noopener noreferrer" class="project-link figma-link" aria-label="View AI Adaptive Dashboards on Figma">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg>
+                                    <span>Figma</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-grid">
+                            <div class="case-study-col">
+                                <span class="case-label label-problem">Problem</span>
+                                <p>Dashboards that show many metrics at once make it hard to see what needs attention first.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-process">Process</span>
+                                <p>Designed Figma widgets whose size and emphasis change with priority (Nominal, Warning, Critical).</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-result">Result</span>
+                                <p>An adaptive dashboard design concept, with the full Figma file linked for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="tech-pills">
+                                <span>Figma</span>
+                                <span>Dashboard UI</span>
+                                <span>Data Viz</span>
+                                <span>Adaptive Layouts</span>
+                            </div>
+                            <button type="button" class="view-details-btn magnet-target" data-modal="modal-dashboard">
+                                <span>Read Full Case Study</span><span class="details-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Fitness Ecosystem Widget -->
+                    <article class="project-card case-study-card" data-category="uiux">
+                        <div class="card-header">
+                            <div class="project-info">
+                                <span class="project-icon" aria-hidden="true">🏃</span>
+                                <div>
+                                    <span class="project-tag">UI/UX Case Study</span>
+                                    <h3>Fitness Ecosystem Widget</h3>
+                                </div>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://www.figma.com/design/gl7wvt0GNlsGUXMLLZqT3N/Fitness-Ecosystem-Widget?node-id=0-1" target="_blank" rel="noopener noreferrer" class="project-link figma-link" aria-label="View Fitness Ecosystem Widget on Figma">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg>
+                                    <span>Figma</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-grid">
+                            <div class="case-study-col">
+                                <span class="case-label label-problem">Problem</span>
+                                <p>Fitness tracking data has to stay compact and in sync on a small widget surface.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-process">Process</span>
+                                <p>Designed a compact, dynamic widget in Figma built around synchronized local tracking.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-result">Result</span>
+                                <p>A compact fitness widget design, with the full Figma file linked for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="tech-pills">
+                                <span>Figma</span>
+                                <span>Widget Design</span>
+                                <span>Fitness Tracking</span>
+                                <span>Data Sync</span>
+                            </div>
+                            <button type="button" class="view-details-btn magnet-target" data-modal="modal-fitness">
+                                <span>Read Full Case Study</span><span class="details-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- CASE STUDY 3: SweetStudio 3D Cake Customizer -->
+                    <article class="project-card case-study-card" data-category="frontend">
+                        <div class="card-header">
+                            <div class="project-info">
+                                <span class="project-icon" aria-hidden="true">🎂</span>
+                                <div>
+                                    <span class="project-tag">Front-End Engineering</span>
+                                    <h3>SweetStudio: 3D Cake Designer</h3>
+                                </div>
+								<div class="card-links">
+            <a class="project-link" href="https://github.com/AmeshikaMohankumar/Sweetstudio-cakedesign-website" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+                            </div>
+</div>
+
+                        <div class="case-study-grid">
+                            <div class="case-study-col">
+                                <span class="case-label label-problem">Problem</span>
+                                <p>Custom cake customers find it hard to picture a multi-tier cake from flat photos.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-process">Process</span>
+                                <p>A browser-based 3D cake customizer (JavaScript, Three.js): rotate the cake, pick flavours, see the price.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-result">Result</span>
+                                <p>A 3D cake customizer project. The source repository is not publicly available right now.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="tech-pills">
+                                <span>JavaScript</span>
+                                <span>Three.js / WebGL</span>
+                                <span>Interactive 3D</span>
+                                <span>Price Calculator</span>
+                            </div>
+                            <button type="button" class="view-details-btn magnet-target" data-modal="modal-sweetstudio">
+                                <span>Read Full Case Study</span><span class="details-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CASE STUDY 4: PayPal Mobile App Redesign -->
+                    <article class="project-card case-study-card" data-category="uiux">
+                        <div class="card-header">
+                            <div class="project-info">
+                                <span class="project-icon" aria-hidden="true">📱</span>
+                                <div>
+                                    <span class="project-tag">UI/ UX Redesign</span>
+                                    <h3>PayPal Mobile App UI/UX Redesign</h3>
+                                </div>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://www.figma.com/design/a2VZz7MOavYNLIreOZruUA/Papal-app-redesign?node-id=0-1&t=jdRNuC3rBazRwPFh-1" target="_blank" rel="noopener noreferrer" class="project-link figma-link" aria-label="View PayPal Redesign on Figma">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg>
+                                    <span>Figma</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-grid">
+                            <div class="case-study-col">
+                                <span class="case-label label-problem">Problem</span>
+                                <p>Sending money internationally can feel uncertain when fees, currency conversion and receipts are not shown clearly.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-process">Process</span>
+                                <p>Reviewed competitor flows, wireframed the transfer journey, and designed a fee-breakdown card and confirmation screen in Figma.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-result">Result</span>
+                                <p>A redesign of a mobile money-transfer flow, with the full Figma file linked for review.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="tech-pills">
+                                <span>Fintech UX</span>
+                                <span>Figma</span>
+                                <span>Wireframing</span>
+                                <span>UI Design</span>
+                            </div>
+                            <button type="button" class="view-details-btn magnet-target" data-modal="modal-paypal">
+                                <span>Read Full Case Study</span><span class="details-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CASE STUDY 5: SaaS Recipe Hub -->
+                    <article class="project-card case-study-card" data-category="uiux">
+                        <div class="card-header">
+                            <div class="project-info">
+                                <span class="project-icon" aria-hidden="true">🍳</span>
+                                <div>
+                                    <span class="project-tag">SaaS UI Design</span>
+                                    <h3>Recipe Hub: Workflow Library</h3>
+                                </div>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://www.figma.com/design/QBJYyWgixgKJo9HNqGeKeo/Recipe-Hub-%E2%80%93-Design-System---Screens?node-id=5-47" target="_blank" rel="noopener noreferrer" class="project-link figma-link" aria-label="View Recipe Hub on Figma">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg>
+                                    <span>Figma</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-grid">
+                            <div class="case-study-col">
+                                <span class="case-label label-problem">Problem</span>
+                                <p>Teams need an easy way to find ready-made workflows instead of building every automation from scratch.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-process">Process</span>
+                                <p>Designed the desktop library screen in Figma from reusable components: sidebar, search, category chips and recipe cards.</p>
+                            </div>
+                            <div class="case-study-col">
+                                <span class="case-label label-result">Result</span>
+                                <p>A desktop recipe-library screen for a workflow product called Whisk, built from reusable Figma components.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="tech-pills">
+                                <span>Figma</span>
+                                <span>Design System</span>
+                                <span>SaaS UI</span>
+                                <span>Component Library</span>
+                            </div>
+                            <button type="button" class="view-details-btn magnet-target" data-modal="modal-recipe">
+                                <span>Read Full Case Study</span><span class="details-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="project-card scroll-reveal" data-category="ui-ux">
+    <div class="card-header">
+        <div class="project-info">
+            <div class="project-icon">🧭</div>
+            <div>
+                <span class="project-tag">AI-Powered Product</span>
+                <h3>AI Travel Companion</h3>
+            </div>
+        </div>
+        <div class="card-links">
+            <a class="project-link" href="https://www.figma.com/design/ibUkxnWLoJiHbWqibFswSP/AI-Travel-Companion?node-id=1-224&t=jKLXMgqHFmWnC5op-1" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM5 13a3.5 3.5 0 0 1 3.5-3.5H12v7H8.5A3.5 3.5 0 0 1 5 13zM12 16.5a3.5 3.5 0 0 1 3.5-3.5H19v3.5a3.5 3.5 0 0 1-3.5 3.5H12v-3.5zM12 2h3.5A3.5 3.5 0 0 1 19 5.5v3.5h-7V2zM12 9.5h7v3.5h-7v-3.5z"></path></svg>
+                <span>Figma</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="case-study-grid">
+        <div class="case-study-col">
+            <span class="case-label label-problem">Challenge</span>
+            <p>Planning dynamic personal trips means constantly juggling destinations, conflicting timelines, and changing route variables.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-process">Approach</span>
+            <p>Designed a fluid conversational mapping layout structured around AI itineraries, adaptive maps, and card decks handling scheduling mutations.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-result">Outcome</span>
+            <p>An intelligent travel product suite concept enabling synchronized flight records, localized activity insights, and real-time path alterations.</p>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <div class="tech-pills">
+            <span>Figma</span>
+            <span>AI Automation</span>
+            <span>Itinerary Mapping</span>
+            <span>Adaptive UX</span>
+        </div>
+        <button class="view-details-btn" data-modal="modal-travel">
+            <span>Explore Case Study</span>
+            <span class="details-arrow" aria-hidden="true">→</span>
+        </button>
+    </div>
+</article>
+
+
+                    <article class="project-card scroll-reveal" data-category="front-end">
+    <div class="card-header">
+        <div class="project-info">
+            <div class="project-icon">🖼</div>
+            <div>
+                <span class="project-tag">Front-End Development</span>
+                <h3>Contemporary Art Website</h3>
+            </div>
+        </div>
+        <div class="card-links">
+            <a class="project-link" href="https://github.com/AmeshikaMohankumar/Contemporary-Art-Website" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="case-study-grid">
+        <div class="case-study-col">
+            <span class="case-label label-problem">Challenge</span>
+            <p>Contemporary art websites need to present artwork clearly and beautifully on any screen constraint.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-process">Approach</span>
+            <p>Designed and built a clean layout using custom responsive styles, page structures, and clean interactivity transitions.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-result">Outcome</span>
+            <p>A minimalist contemporary art-themed gallery website seamlessly handcrafted using vanilla HTML5, CSS3, and JavaScript.</p>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <div class="tech-pills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Contemporary Art</span>
+        </div>
+        <button class="view-details-btn" data-modal="modal-frontend">
+            <span>Explore Case Study</span>
+            <span class="details-arrow" aria-hidden="true">→</span>
+        </button>
+    </div>
+</article>
+
+
+                  
+
+                       
+
+                    <article class="project-card scroll-reveal" data-category="ui-ux">
+    <div class="card-header">
+        <div class="project-info">
+            <div class="project-icon">🌾</div>
+            <div>
+                <span class="project-tag">Smart Agriculture AI</span>
+                <h3>Agrosmart AI Mobile app</h3>
+            </div>
+        </div>
+        <div class="card-links">
+            <a class="project-link" href="https://www.figma.com/design/0CkMLcvjOAyBnpG5d0FCy2/AgroSmart-AI---DesignUI?node-id=0-1&t=dQ47e1WkHFrl6H7K-1" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM5 13a3.5 3.5 0 0 1 3.5-3.5H12v7H8.5A3.5 3.5 0 0 1 5 13zM12 16.5a3.5 3.5 0 0 1 3.5-3.5H19v3.5a3.5 3.5 0 0 1-3.5 3.5H12v-3.5zM12 2h3.5A3.5 3.5 0 0 1 19 5.5v3.5h-7V2zM12 9.5h7v3.5h-7v-3.5z"></path></svg>
+                <span>Figma</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="case-study-grid">
+        <div class="case-study-col">
+            <span class="case-label label-problem">Challenge</span>
+            <p>Farmers operating in rural fields need quick, critical soil-moisture and sensory telemetry information that remains readable outdoors.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-process">Approach</span>
+            <p>Designed color-coded regional interactive maps mapped against low-light and high-contrast styling with localized offline telemetry tracking states.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-result">Outcome</span>
+            <p>A smart agriculture optimization blueprint mapping out sensor ecosystems with seamless cached-versus-live synchronization updates.</p>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <div class="tech-pills">
+            <span>Figma</span>
+            <span>IoT UX</span>
+            <span>Offline Architecture</span>
+            <span>High Contrast UI</span>
+        </div>
+        <button class="view-details-btn" data-modal="modal-agrosmart">
+            <span>Explore Case Study</span>
+            <span class="details-arrow" aria-hidden="true">→</span>
+        </button>
+    </div>
+</article>
+
+<!-- Obsidian Kinetic Project Card -->
+<article class="project-card scroll-reveal" data-category="front-end">
+    <div class="card-header">
+        <div class="project-info">
+            <div class="project-icon">🛸</div>
+            <div>
+                <span class="project-tag">Front-End Engineering & Interaction Design</span>
+                <h3>Obsidian Kinetic Engine</h3>
+            </div>
+        </div>
+        <div class="card-links">
+            <a class="project-link" href="https://github.com/AmeshikaMohankumar/obsidian-kinetic-" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 3-Column Agile Breakdown Summary -->
+    <div class="case-study-grid">
+        <div class="case-study-col">
+            <span class="case-label label-problem">Challenge</span>
+            <p>Engineers lose code velocity due to heavy context switching, manual time logging, and cluttered task managers.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-process">Approach</span>
+            <p>Built a React+TypeScript orchestration layout using Tailwind CSS v4 token hierarchies, an agentic command palette, and a browser focus clock dial.</p>
+        </div>
+        <div class="case-study-col">
+            <span class="case-label label-result">Outcome</span>
+            <p>An interactive developer pipeline tracking framework supporting swift sub-150ms screen transformations and continuous telemetry.</p>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <div class="tech-pills">
+            <span>React.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>Web Audio API</span>
+            <span>Vite</span>
+        </div>
+        <button class="view-details-btn" data-modal="modal-obsidian">
+            <span>Explore Case Study</span>
+            <span class="details-arrow" aria-hidden="true">→</span>
+        </button>
+    </div>
+</article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TESTIMONIALS & FEEDBACK SECTION -->
+        <section id="testimonials" class="testimonials-section scroll-reveal" aria-labelledby="testimonials-heading">
+            <div class="section-container">
+                <span class="section-badge">Social Proof</span>
+                <h2 id="testimonials-heading">Professional Feedback</h2>
+                <p class="section-desc">Feedback from product managers, lead developers, and design peers.</p>
+
+                <div class="testimonials-grid single">
+                    <article class="testimonial-card network-card">
+                        <svg class="quote-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 5C6.1 5 3 8.1 3 12v7h7v-7H6.1c0-2.1 1.8-3.9 3.9-3.9V5zm11 0c-3.9 0-7 3.1-7 7v7h7v-7h-3.9c0-2.1 1.8-3.9 3.9-3.9V5z"/></svg>
+                        <blockquote class="testimonial-quote">
+                            &ldquo;I like the emphasis on transparency and user control in adaptive dashboard design. Personalization can be powerful, but users still need to understand why certain information is being prioritized and how to change it... adaptive layouts are an interesting direction for testing different user journeys.&rdquo;
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">IA</div>
+                            <div>
+                                <h3 class="author-name">Ilya Anisimov</h3>
+                                <div class="author-role">Business Development | Expansion &amp; Growth</div>
+                            </div>
+                        </div>
+                        <p class="network-summary">Co-Founder &amp; Chief Growth Officer at Previzio, specializing in market expansion, Go-To-Market (GTM) execution, and operations scaling.</p>
+                        <a class="network-link" href="https://ru.linkedin.com/in/ilya-anisimov-55460aaa" target="_blank" rel="noopener noreferrer" aria-label="View Ilya Anisimov on LinkedIn (opens in a new tab)">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <span>View LinkedIn profile</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. INSIGHTS & ARTICLES (MICRO-BLOG) -->
+        <section id="insights" class="insights-section scroll-reveal" aria-labelledby="insights-heading">
+            <div class="section-container">
+                <span class="section-badge">Thoughts &amp; Learnings</span>
+                <h2 id="insights-heading">Design &amp; Code Insights</h2>
+                <p class="section-desc">Short articles on UX architecture, motion engineering, and AI pipelines.</p>
+
+                <div class="insights-grid">
+                    <article class="insight-card">
+                        <span class="insight-date">Oct 2026 &bull; 4 min read</span>
+                        <h3>Why 60fps Motion Belongs in Every Enterprise App</h3>
+                        <p>How limiting animation properties strictly to transform and opacity preserves UI responsiveness and prevents costly layout trashing.</p>
+                        <a href="#contact" class="insight-link">Read Discussion &rarr;</a>
+                    </article>
+
+                    <article class="insight-card">
+                        <span class="insight-date">Sep 2026 &bull; 6 min read</span>
+                        <h3>The Anatomy of a Case Study Recruiters Actually Read</h3>
+                        <p>Why problem, process, and measurable impact will win over static screenshot galleries every single time.</p>
+                        <a href="#contact" class="insight-link">Read Discussion &rarr;</a>
+                    </article>
+
+                    <article class="insight-card">
+                        <span class="insight-date">Aug 2026 &bull; 5 min read</span>
+                        <h3>AI-Augmented UX: Moving from Prompts to Prototypes</h3>
+                        <p>A practical guide to leveraging modern agentic workflows without losing the human empathy that defines great design.</p>
+                        <a href="#contact" class="insight-link">Read Discussion &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="contact-section scroll-reveal" aria-labelledby="contact-heading">
+            <div class="section-container">
+                <span class="section-badge">Get in Touch</span>
+                <h2 id="contact-heading">Let's Connect</h2>
+                
+                <p class="contact-intro">
+                    Have an upcoming project, a full-time role, or an interesting design challenge? I'd love to hear from you.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <span class="contact-card-icon" aria-hidden="true">✉️</span>
+                        <div>
+                            <h4>Direct Email</h4>
+                            <a href="mailto:ameshikamohankumar073@gmail.com" class="direct-email-link">ameshikamohankumar073@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-card-icon" aria-hidden="true">📍</span>
+                        <div>
+                            <h4>Location &amp; Availability</h4>
+                            <p>Remote Worldwide &bull; Open for Contracts &amp; Full-time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web3Forms Contact Form -->
+                <form id="contactForm" class="contact-form" novalidate>
+                    <!-- Anti-spam Honeypot -->
+                    <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <input type="hidden" name="subject" value="New Portfolio Message from Ameshika's Website">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="userName">Your Name <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="userName" name="name" required placeholder="Alex Morgan" autocomplete="name">
+                            <span class="field-error" id="nameError" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Your Email Address <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="userEmail" name="email" required placeholder="alex@company.com" autocomplete="email">
+                            <span class="field-error" id="emailError" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userSubject">Project Type / Subject</label>
+                        <input type="text" id="userSubject" name="project_type" placeholder="e.g. Mobile UX Redesign, Front-End Consultation, Job Opportunity">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMessage">Your Message <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="userMessage" name="message" rows="5" required placeholder="Tell me about your project goals, scope, and target timeline..."></textarea>
+                        <span class="field-error" id="messageError" aria-live="polite"></span>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="submit-btn magnet-target">
+                        <span class="btn-text">Send Message</span>
+                        <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+
+                <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-name">Ameshika Mohankumar</span>
+                <p>&copy; <span id="currentYear">2026</span> &bull; Handcrafted</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE CASE STUDY MODAL -->
+    <div id="caseStudyModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-window">
+            <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close case study modal">&times;</button>
+            <div class="modal-body" id="modalContent">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
